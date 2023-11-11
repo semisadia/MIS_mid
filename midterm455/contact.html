@@ -15,10 +15,30 @@
 
         header,
         footer {
-            background-color: #333;
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: #443d3d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer p:nth-child(1) {
+            font-size: 30px;
             color: #fff;
+            margin-bottom: 20px;
+            font-weight: bold;
+
+        }
+
+        footer p:nth-child(2) {
+            color: #fff;
+            font-size: 17px;
+            width: 500px;
             text-align: center;
-            padding: 1em;
+            line-height: 26px;
         }
 
         .container {
@@ -32,7 +52,7 @@
 
         h1 {
             text-align: center;
-            color:white;
+            color: white;
         }
 
         form {
@@ -62,42 +82,46 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
-        footer p:nth-child(1){
+
+        footer p:nth-child(1) {
             text-align: center;
-    font-size: 30px;
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: bold;
 
-}
-footer p:nth-child(2){
-    color:#fff;
-    font-size: 17px;
-    width: 500px;
-    text-align: center;
-    line-height: 26px;
-}
-        .social{
+        }
+
+        footer p:nth-child(2) {
+            color: #fff;
+            font-size: 17px;
+            width: 500px;
+            text-align: center;
+            line-height: 26px;
+        }
+
+        .social {
             display: flex;
-}
-.social a{
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f9004d;
-    border-radius: 50%;
-    margin: 22px 10px;
-    color: #fff;
-    text-decoration: none;
-}
-.social a:hover{
-    transform: scale(1.3);
-    transform: .3s;
-}
+        }
 
+        .social a {
+            text-align: center;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9004d;
+            border-radius: 50%;
+            margin: 22px 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social a:hover {
+            transform: scale(1.3);
+            transform: .3s;
+        }
     </style>
 </head>
 
@@ -124,15 +148,15 @@ footer p:nth-child(2){
 
     <footer>
         <p>WOODENhub<br>
-        Wanna Visit Our Social Media Pages?Here you go<br</p>
-        <p>Thank<span>you</span></p>
-        
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
-        <div class="social">
-            <a href=target="blank"><b>F</b></a>
-            <a href=target="blank"><b>I</b></a>
-            <a href=target="blank"><b>IN</b></a>
-        </div>
+            Wanna Visit Our Social Media Pages?Here you go<br</p>
+                <p>Thank<span>you</span></p>
+
+                <p>&copy; 2023 woodenhub. All rights reserved.</p>
+                <div class="social">
+                    <a href=target="blank"><b>F</b></a>
+                    <a href=target="blank"><b>I</b></a>
+                    <a href=target="blank"><b>IN</b></a>
+                </div>
     </footer>
 
 </body>
