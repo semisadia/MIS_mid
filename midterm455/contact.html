@@ -4,151 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contact Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header,
-        footer {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background: #443d3d;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        footer p:nth-child(1) {
-            font-size: 30px;
-            color: #fff;
-            margin-bottom: 20px;
-            font-weight: bold;
-
-        }
-
-        footer p:nth-child(2) {
-            color: #fff;
-            font-size: 17px;
-            width: 500px;
-            text-align: center;
-            line-height: 26px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-
-        h1 {
-            text-align: center;
-            color: white;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            margin-bottom: 8px;
-            color: #555;
-        }
-
-        input,
-        textarea {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        input[type="submit"] {
-            background-color: #4caf50;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        footer p:nth-child(1) {
-            text-align: center;
-            font-size: 30px;
-            color: #fff;
-            margin-bottom: 20px;
-            font-weight: bold;
-
-        }
-
-        footer p:nth-child(2) {
-            color: #fff;
-            font-size: 17px;
-            width: 500px;
-            text-align: center;
-            line-height: 26px;
-        }
-
-        .social {
-            display: flex;
-        }
-
-        .social a {
-            text-align: center;
-            width: 45px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f9004d;
-            border-radius: 50%;
-            margin: 22px 10px;
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .social a:hover {
-            transform: scale(1.3);
-            transform: .3s;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Contact Page</h1>
+    <header class="productHeader">
+        <div class="container">
+            <div class="logo">
+                <h1>Wooden Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <div class="container">
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+    <div class="main-container">
+        <div class="left-div">
+            <div class="container">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    
+        <div class="right-div">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14600.348085444703!2d90.4275435!3d23.8155044!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64be6744a57%3A0xeacead51ebe2bf60!2sIndependent%20University%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1699720639205!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
+    
 
     <footer>
-        <p>WOODENhub<br>
-            Wanna Visit Our Social Media Pages?Here you go<br</p>
+        <p>WOODEN hub<br>
+            Wanna Visit Our Social Media Pages?Here you go<br< /p>
                 <p>Thank<span>you</span></p>
 
                 <p>&copy; 2023 woodenhub. All rights reserved.</p>

@@ -2,40 +2,64 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #1b2b34;
 }
 
-header {
-    background-color: #333;
+.header {
+    background-image: url('header.jpg'); /* Replace 'header-background.jpg' with the actual path to your image */
+    background-size: cover; /* Ensures the background image covers the entire header */
     color: #fff;
-    padding: 0.5em;
+    padding: 0px;
+    height: 600px;
+    margin: 0px;
 }
+.productHeader{
+    color: #fff;
 
-.header-container {
+}
+.container {
+    width: 80%;
+    margin: 0 50px ;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
     align-items: center;
 }
-
 .logo {
-    margin: 0;
+    flex-grow: 0;
 }
-
 nav {
-    flex-grow: 1;
-    text-align: center;
+    margin-left: 200px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 100px;
+    font-size: larger;
+}
+
+nav a, button {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, button:hover {
+    color: rgb(0, 140, 255);
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+nav li.active a {
+    color: rgb(0, 140, 255);
     
 }
 
-nav li {
-    
-    display: inline;
-    margin-right: 20px;
-}
 
 #products {
     display: grid;
@@ -46,23 +70,120 @@ nav li {
 }
 
 .product {
+    background-color: white;
     border: 1px solid #ddd;
     padding: 5px;
     text-align: center;
+    box-shadow: 0 10px 8px rgba(96, 119, 133, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .product img {
     max-width: 100%;
     height: 250px;
     object-fit: cover;
+
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(27, 43, 52, 0.2); 
+}
+
+
+.contain{
+    margin-top: 140px;
+    margin-left: 400px;
+}
+.contain h1{
+    font-size:50px;
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2vw;
+}
+
+.left-div, .right-div {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+.left-div ,
+.right-div {
+    max-width: 400px;
+    margin: 0 auto;
+}
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #1b2b34;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #33414d;
+    color: #fff;
 }
 
 footer {
-    background-color: #333;
+    background-color: #646565;
     color: #fff;
     text-align: center;
     padding: 1em;
-    position:relative;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer p {
+    margin: 5px 0;
+}
+
+footer span {
+    color: #88c0d0;
+}
+
+
+button {
+    background-color: #1b2b34;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #33414d;
+    color: #fff;
 }
